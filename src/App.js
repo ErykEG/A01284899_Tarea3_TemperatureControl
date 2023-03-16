@@ -10,10 +10,10 @@ function App() {
   // 2) Agregar las funciones para manejar los eventos de Click a los botones para que
   //     cuando se presionen se incremente o decremente el valor de la temperatura.
   function Increase() {
-    if (temperatureValue == 19) {
+    if (temperatureValue < 30) {
+      if (temperatureValue == 19) {
       setTemperatureColor("hot");
     }
-    if (temperatureValue < 30) {
       setTemperatureValue(temperatureValue + 1);
     }
   }
